@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Challenge #1
+        function showNumbers(limit) {
+            if (limit % 2 == 0) {
+                console.log("EVEN");
+            }
+            if (limit % 2 == 1) {
+                console.log("ODD");
+            }
+        }
+        showNumbers(10);
+        //ternary operators
+        function showNumbers(lim) {
+            let answer = (lim % 2 == 0) ? "EVEN" : "ODD";
+            console.log(answer);
+        }
+        showNumbers(10);
+
+        //Challenge #2
+        const array = [0,null,undefined,'',NaN,10,5,11];
+        function countTruthy(array) {
+            let count = 0;
+            for (let val of array) {
+                if (val == true) {
+                    count++;
+                }
+            }
+        }
+        console.log(countTruthy(array));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
